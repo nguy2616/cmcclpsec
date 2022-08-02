@@ -13,7 +13,7 @@ import { ClickService } from './click.service';
     origin: '*',
   },
 })
-export class ClickGateway {
+export class ClickSocket {
   @WebSocketServer()
   server: Server;
   constructor(private readonly clickService: ClickService) {}

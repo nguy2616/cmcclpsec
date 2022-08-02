@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ClickService } from './click.service';
-import { ClickGateway } from './click.gateway';
+import { ClickSocket } from './click.socket';
 
 @Module({
-  providers: [ClickGateway, ClickService],
+  providers: [ClickSocket, ClickService],
 })
 export class ClickModule {}
